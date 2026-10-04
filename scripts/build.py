@@ -5,26 +5,31 @@ from PIL import Image, ImageOps
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 SRC, PUB, STA = ROOT / "src", ROOT / "public", ROOT / "standalone"
-DIST = ROOT / "src/assets/img"   # optimized images are written straight back into src/ so every consumer gets one copy
+CACHE = ROOT / ".build/img"   # optimized copies live here; src/ is never rewritten (no generational JPEG loss)
 IMGOPT = dict(quality=78, optimize=True, progressive=True, subsampling=2)
 
 def optimize_images():
-    (PUB / "assets/img").mkdir(parents=True, exist_ok=True)
+    """Non-destructive: src/assets/img -> .build/img (re-encoded only when newer than the cache)."""
+    CACHE.mkdir(parents=True, exist_ok=True)
     report = {}
     for f in sorted((SRC / "assets/img").glob("*.jpg")):
-        im = Image.open(f)
-        im = ImageOps.exif_transpose(im).convert("RGB")
-        if f.name == "portrait.jpg":                       # 4:5 portrait crop
+        out = CACHE / f.name
+        if out.exists() and out.stat().st_mtime >= f.stat().st_mtime:
+            im = Image.open(out)
+            report[f.name] = (im.size, out.stat().st_size, "cached")
+            continue
+        im = ImageOps.exif_transpose(Image.open(f)).convert("RGB")
+        if f.name == "portrait.jpg":                       # 4:5 portrait
             im = im.resize((1100, 1375), Image.LANCZOS)
         else:
             w, h = im.size
             if max(w, h) > 1280:
                 r = 1280 / max(w, h)
                 im = im.resize((int(w * r), int(h * r)), Image.LANCZOS)
-        out = SRC / "assets/img" / f.name
         im.save(out, "JPEG", **IMGOPT)
-        report[f.name] = (im.size, out.stat().st_size)
+        report[f.name] = (im.size, out.stat().st_size, "encoded")
     return report
+
 
 def b64(p: pathlib.Path):
     return "data:image/jpeg;base64," + base64.b64encode(p.read_bytes()).decode()
@@ -33,7 +38,7 @@ def build_public():
     if PUB.exists():
         shutil.rmtree(PUB)
     PUB.mkdir(parents=True)
-    shutil.copytree(SRC / "assets/img", PUB / "assets/img")
+    shutil.copytree(CACHE, PUB / "assets/img")
     shutil.copy2(SRC / "index.html", PUB / "index.html")
     for d in ("css", "js"):
         shutil.copytree(SRC / d, PUB / d)
@@ -119,6 +124,7 @@ if __name__ == "__main__":
     print(json.dumps({
         "images": {k: {"size": f"{v[0][0]}x{v[0][1]}", "bytes": v[1]} for k, v in rep.items()},
         "images_total_kb": round(total / 1024),
+        "image_status": {k: v[2] for k, v in rep.items()},
         "standalone_kb": round(size / 1024),
         "broken_refs": bad
     }, ensure_ascii=False, indent=1))
