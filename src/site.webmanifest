@@ -1,0 +1,13 @@
+{
+  "name": "رزومه — امیر رستگاری، استادکار ارشد خودرو",
+  "short_name": "رزومه مکانیک",
+  "description": "سایت رزومهٔ نمونه (demo) یک مکانیک حرفه‌ای — RTL، فارسی",
+  "lang": "fa",
+  "dir": "rtl",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#08090b",
+  "theme_color": "#e9b44c",
+  "icons": [{ "src": "./favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+}

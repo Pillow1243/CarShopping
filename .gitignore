@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+qa/
+public/
+.DS_Store
+node_modules/
+src/assets/img/.orig/

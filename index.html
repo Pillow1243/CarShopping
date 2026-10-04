@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" data-theme="dark" data-accent="gold" data-magnet="on">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>امیر رستگاری | استادکار ارشد خودرو، متخصص عیب‌یابی و تیونینگ موتور</title>
+<meta name="description" content="رزومه کاری امیر رستگاری — استادکار ارشد موتور و دیاگ با ۱۷ سال سابقه: عیب‌یابی الکترونیک، تعمیر گیربکس اتوماتیک، remap و تیونینگ، سرویس هیبرید. بیش از ۴۲۰۰ تعمیر موفق در تهران و کرج.">
+<meta name="keywords" content="مکانیک خودرو, استادکار موتور, دیاگ, عیب یابی خودرو, تیونینگ, remap, تعمیر گیربکس اتوماتیک, رزومه مکانیک">
+<meta name="author" content="امیر رستگاری">
+<meta name="theme-color" content="#08090b">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://pillow1243.github.io/CarShopping/">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="امیر رستگاری | استادکار ارشد خودرو">
+<meta property="og:description" content="۱۷ سال تجربه، ۴۲۰۰+ تعمیر موفق، تخصص در عیب‌یابی الکترونیک، گیربکس اتوماتیک و تیونینگ موتور.">
+<meta property="og:image" content="./assets/img/hero-garage.jpg">
+<meta property="og:locale" content="fa_IR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="format-detection" content="telephone=yes">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230c0e12'/%3E%3Cg fill='none' stroke='%23e9b44c' stroke-width='5' stroke-linecap='round'%3E%3Cpath d='M32 14a12 12 0 1 0 0 24 12 12 0 0 0 0-24z'/%3E%3Cpath d='M32 4v8M32 52v8M4 32h8M52 32h8'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="manifest" href="./site.webmanifest">
+<link rel="icon" href="./favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="./css/styles.css">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Person",
+  "name":"امیر رستگاری",
+  "alternateName":"Amir Restagari",
+  "jobTitle":"استادکار ارشد موتور و عیب‌یابی خودرو",
+  "description":"مکانیک حرفه‌ای با ۱۷ سال سابقه در عیب‌یابی الکترونیک، تعمیر گیربکس اتوماتیک و تیونینگ موتور",
+  "image":"./assets/img/portrait.jpg",
+  "telephone":"+98-912-000-0000",
+  "email":"resume@example.com",
+  "knowsAbout":["عیب‌یابی موتور","تعمیر گیربکس اتوماتیک","Remap و تیونینگ ECU","سیستم ترمز ABS/ESP","خودروهای هیبریدی"],
+  "address":{"@type":"PostalAddress","addressLocales":"tehran","addressCountry":"IR","addressRegion":"تهران","streetAddress":"خیابان کارگر شمالی، پاساژ فنی آریا، پلاک ۲۱۴"},
+  "worksFor":{"@type":"AutoRepair","name":"مرکز سرویس تخصصی آریا‌دیزل"},
+  "alumniOf":{"@type":"EducationalOrganization","name":"دانشگاه فنی و حرفه‌ای — مهندسی مکانیک خودرو"},
+  "hasCredential":["Bosch Car Service — عیب‌یابی دیزل","Hybrid High-Voltage Safety (FAAAM)","ISO 9001 Lead Workshop Supervisor"],
+  "sameAs":["https://github.com/Pillow1243/CarShopping"]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">پرش به محتوای اصلی</a>
+<div class="preload" id="preload" role="status" aria-live="polite" aria-label="در حال بارگذاری">
+  <div class="preload__inner">
+    <div class="preload__ring"></div>
+    <div class="preload__brand">امیر رستگاری <span class="en">· RESTGARI</span></div>
+    <div class="preload__pct"><b id="preloadPct">۰</b><span>٪ &nbsp;در حال استارت موتور…</span></div>
+  </div>
+</div>
+<div class="progress no-print"><div class="progress__bar" id="progressBar"></div></div>
+<div class="fx fx--vig" aria-hidden="true"></div>
+<div class="fx fx--noise" aria-hidden="true"></div>
+<div class="cur" id="cur" aria-hidden="true"></div>
+<div class="cur-r" id="curR" aria-hidden="true"></div>
+
+<!-- ============================ SVG SPRITE ============================ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-wrench" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M15.6 3.4a5.5 5.5 0 0 0-7.2 6.9L3 15.6a2.4 2.4 0 0 0 3.4 3.4l5.3-5.4a5.5 5.5 0 0 0 6.9-7.2l-3.1 3.1-1.4-3.3z"/></symbol>
+  <symbol id="i-engine" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h2V7h4v2h3l2 2h3v6h-2v2H7v-2H4v-3H3v-5h1z"/><path d="M10 5h5M12 5v2"/></symbol>
+  <symbol id="i-gear" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3.2"/><path d="M12 2v2.6M12 19.4V22M2 12h2.6M19.4 12H22M4.9 4.9l1.9 1.9M17.2 17.2l1.9 1.9M19.1 4.9l-1.9 1.9M6.8 17.2l-1.9 1.9"/></symbol>
+  <symbol id="i-scan" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2.2"/><path d="M6 8h5M6 11h8M6 14h4M17 10v4M15 12h4"/></symbol>
+  <symbol id="i-battery" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="7" width="16" height="11" rx="2"/><path d="M18.5 10.5h2.2M8 4.5h5M4.5 11.5h4M6.5 9.5v4"/></symbol>
+  <symbol id="i-brake" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.2"/><circle cx="12" cy="12" r="3"/><path d="M12 3.8V8M12 16v4.2M3.8 12H8M16 12h4.2"/></symbol>
+  <symbol id="i-snow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5v19M3.7 7.3l16.6 9.4M20.3 7.3L3.7 16.7M12 6l-2.2 2.2M12 6l2.2 2.2M12 18l-2.2-2.2M12 18l2.2-2.2"/></symbol>
+  <symbol id="i-coil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2h6M11 2v4M13 2v4M8 6h8l-1 4H9zM8.5 10h7l-1 4H9.5zM9 14h6l-1.5 6h-3z"/></symbol>
+  <symbol id="i-susp" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v3M8 5h8M9 5l6 2-6 2 6 2-6 2 6 2M12 15v3M8.5 18h7M12 18v4"/></symbol>
+  <symbol id="i-dyno" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 18a9.5 9.5 0 1 1 17 0"/><path d="M12 14.5l4.5-5.5"/><circle cx="12" cy="15" r="1.6"/><path d="M4.5 11h1.6M18 11h-1.6M12 4.5v1.6"/></symbol>
+  <symbol id="i-car" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14l1.6-5.2A3 3 0 0 1 7.5 7h9a3 3 0 0 1 2.9 1.8L21 14v4h-3M6 18H3v-4"/><circle cx="7.5" cy="17.5" r="1.9"/><circle cx="16.5" cy="17.5" r="1.9"/><path d="M5.5 14h13"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5l8 3v6c0 5-3.6 8.5-8 10-4.4-1.5-8-5-8-10v-6z"/><path d="M8.6 12.2l2.4 2.4 4.6-5"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7.2V12l3.4 2.2"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 2.8h3l1.4 4-2 1.4a11.5 11.5 0 0 0 5.5 5.5l1.4-2 4 1.4v3a2 2 0 0 1-2.2 2A17.5 17.5 0 0 1 4.5 5a2 2 0 0 1 2-2.2z"/></symbol>
+  <symbol id="i-whats" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2A9.7 9.7 0 0 0 3.6 16.8L2.4 21.6l4.9-1.3A9.7 9.7 0 1 0 12 2.2zm0 1.9a7.8 7.8 0 0 1 6.5 12.1l-.4.6.7 2.5-2.6-.6-.7.4A7.8 7.8 0 1 1 12 4.1zm-3.4 3.7c-.3 0-.6.1-.8.4-.3.3-.8.9-.8 1.9s.7 2.1.9 2.4c.1.2 1.5 2.5 3.8 3.4 1.9.8 2.3.6 2.7.6.5-.1 1.5-.7 1.7-1.4.2-.7.2-1.2.1-1.4 0-.1-.2-.2-.5-.4l-1.6-.8c-.2-.1-.4-.1-.6.1l-.7.9c-.1.2-.3.2-.5.1a6.4 6.4 0 0 1-1.9-1.2 7 7 0 0 1-1.3-1.7c-.1-.2 0-.3.1-.5l.5-.6c.1-.2.2-.3.1-.5l-.7-1.7c-.2-.4-.4-.4-.6-.4z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.8" y="4.8" width="18.4" height="14.4" rx="2.4"/><path d="M3.4 6.6L12 13l8.6-6.4"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.5s7-6 7-11a7 7 0 1 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10.3" r="2.6"/></symbol>
+  <symbol id="i-telegram" viewBox="0 0 24 24" fill="currentColor"><path d="M21.7 4.1L2.9 11.4c-1.2.5-1.2 1.3-.2 1.6l4.6 1.5 1.8 5.5c.2.6.4.8 1 .8.5 0 .7-.2 1-.5l2.3-2.2 4.7 3.5c.9.5 1.5.2 1.7-.8l3-14.1c.3-1.2-.5-1.8-1.1-1.6zM7.9 14.3l11-6.9c.5-.3 1-.1.6.2l-8.9 8.1-.4 3.8-.4-2.9z"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.6l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.4l-5.8 3.1 1.1-6.5L2.6 9.4l6.5-.9z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.6l4.6 4.6L19.5 6.8"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v14M6 12.5l6 6 6-6"/></symbol>
+  <symbol id="i-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V6M6 11.5l6-6 6 6"/></symbol>
+  <symbol id="i-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12H6M11.5 6l-6 6 6 6"/></symbol>
+  <symbol id="i-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h14M12.5 6l6 6-6 6"/></symbol>
+  <symbol id="i-print" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M7 8V3h10v5M7 18H4.5v-8h15v8H17"/><rect x="7" y="14" width="10" height="7" rx="1.6"/><path d="M7 11.5h1.5"/></symbol>
+  <symbol id="i-dl" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v11M7.5 10.5L12 15l4.5-4.5M4 17.5V20a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-2.5"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.4V5M12 19v2.6M2.4 12H5M19 12h2.6M5.1 5.1L7 7M17 17l1.9 1.9M18.9 5.1L17 7M7 17l-1.9 1.9"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 8.6 8.6 0 1 0 20 14.5z"/></symbol>
+  <symbol id="i-sound" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9.5h3L12 5.5v13L7 14.5H4z"/><path d="M15.5 9.2a4.4 4.4 0 0 1 0 5.6M18 7a7.6 7.6 0 0 1 0 10"/></symbol>
+  <symbol id="i-mute" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9.5h3L12 5.5v13L7 14.5H4z"/><path d="M16 10l4 4M20 10l-4 4"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h10"/></symbol>
+  <symbol id="i-quote" viewBox="0 0 24 24" fill="currentColor"><path d="M9.4 5.2C6.2 6.6 4.3 9.2 4.3 12.5c0 3.4 2 5.6 4.6 5.6 2.2 0 3.8-1.6 3.8-3.6 0-2-1.4-3.5-3.3-3.5-.4 0-.8 0-1 .2.2-1.9 1.8-3.4 3.9-4.3zm9.4 0c-3.2 1.4-5.1 4-5.1 7.3 0 3.4 2 5.6 4.6 5.6 2.2 0 3.8-1.6 3.8-3.6 0-2-1.4-3.5-3.3-3.5-.4 0-.8 0-1 .2.2-1.9 1.8-3.4 3.9-4.3z"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3.2" y="5" width="17.6" height="16" rx="2.4"/><path d="M3.2 9.6h17.6M7.5 3v4M16.5 3v4M7.5 13.4h3M7.5 17h7"/></symbol>
+  <symbol id="i-flag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V3.5M5 4.5h13l-2.4 4 2.4 4H5"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.4"/><path d="M3 20c0-3.4 2.7-5.6 6-5.6s6 2.2 6 5.6M16.5 5.2a3.4 3.4 0 0 1 0 6.6M18 14.8c2 .7 3.4 2.5 3.4 5.2"/></symbol>
+  <symbol id="i-key" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="7.5" cy="14.5" r="4.3"/><path d="M10.5 11.5L20 2.5M17 5.5l2.2 2.2M14.6 8l2.2 2.2"/></symbol>
+</svg>
+
+<!-- ============================ HEADER ============================ -->
+<header class="hdr" id="hdr">
+  <div class="wrap hdr__in">
+    <a class="brand" href="#home" aria-label="بازگشت به ابتدا">
+      <span class="brand__mark"><svg><use href="#i-wrench"/></svg></span>
+      <span class="brand__txt">امیر رستگاری<small class="en">MASTER TECH · 17 YRS</small></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="فهرست بخش‌ها">
+      <a href="#about">درباره من</a>
+      <a href="#skills">مهارت‌ها</a>
+      <a href="#services">خدمات</a>
+      <a href="#exp">سوابق</a>
+      <a href="#work">نمونه‌کارها</a>
+      <a href="#voices">نظرات</a>
+      <a href="#plans">تعرفه‌ها</a>
+      <a href="#contact">تماس</a>
+    </nav>
+    <div class="hdr__tools">
+      <button class="iconbtn" id="accentBtn" title="تغییر رنگ تأکید" aria-label="تغییر رنگ تأکید">
+        <svg><use href="#i-gear"/></svg>
+      </button>
+      <button class="iconbtn" id="themeBtn" title="حالت روشن/تاریک" aria-label="تغییر حالت روشن یا تاریک">
+        <svg class="t-dark"><use href="#i-sun"/></svg><svg class="t-light" style="display:none"><use href="#i-moon"/></svg>
+      </button>
+      <a class="btn btn--solid btn--sm" href="#contact"><span class="btn__ic"><svg><use href="#i-cal"/></svg></span><span>نوبت بگیر</span></a>
+      <button class="iconbtn burger no-print" id="burger" aria-expanded="false" aria-controls="nav" aria-label="باز کردن منو"><svg><use href="#i-menu"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<nav class="rail" id="rail" aria-label="پیمایش سریع بخش‌ها">
+  <a href="#home"><span>خانه</span></a>
+  <a href="#about"><span>درباره</span></a>
+  <a href="#skills"><span>مهارت‌ها</span></a>
+  <a href="#services"><span>خدمات</span></a>
+  <a href="#exp"><span>سوابق</span></a>
+  <a href="#work"><span>نمونه‌کار</span></a>
+  <a href="#voices"><span>نظرات</span></a>
+  <a href="#plans"><span>تعرفه</span></a>
+  <a href="#contact"><span>تماس</span></a>
+</nav>
+
+<main id="main">
+
+<!-- ============================ HERO ============================ -->
+<section class="hero" id="home">
+  <div class="hero__bg"><img src="./assets/img/hero-garage.jpg" alt="گاراژ تخصصی تاریک با دستگاه بالابر و نور طلایی" loading="eager" fetchpriority="high" decoding="async"></div>
+  <canvas id="sparks" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <div class="hero__grid">
+      <div>
+        <span class="hero__status" id="heroStatus"><i class="blip"></i><span class="hero__status-txt">در حال بارگذاری وضعیت…</span></span>
+        <p class="kicker" data-reveal="fade"><i></i>رزومه کاری · نسخه ۱۴۰۵</p>
+        <h1 class="hero__name">امیر <span class="l2">رستگاری</span></h1>
+        <p class="hero__role" aria-live="polite"><span id="typed"></span><span class="caret"></span></p>
+        <p class="hero__lead">
+            ۱۷ سال است که صدای موتور را قبل از دستگاه می‌شنوم و خطای ECU را قبل از مشتری پیدا می‌کنم.
+            متخصص عیب‌یابی الکترونیک، گیربکس اتوماتیک و تیونینگ روی دینو — با گزارش مکتوب، قطعه اصلی و ضمانت کتبی.
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--solid" href="#contact" data-magnet data-sfx><svg><use href="#i-cal"/></svg>رزرو عیب‌یابی</a>
+          <button class="btn btn--ghost" id="printBtn" data-magnet data-sfx><svg><use href="#i-print"/></svg>دریافت رزومه PDF</button>
+          <a class="btn btn--ghost" href="#work" data-magnet data-sfx><svg><use href="#i-scan"/></svg>نمونه‌کارها</a>
+        </div>
+        <div class="hero__meta">
+          <div><b class="num" data-count="17" data-suffix="+"></b><span>سال تجربه</span></div>
+          <div><b class="num" data-count="4200" data-suffix="+"></b><span>تعمیر موفق</span></div>
+          <div><b class="num" data-count="98" data-suffix="٪"></b><span>رضایت مشتری</span></div>
+          <div><b class="num" data-count="31" data-suffix=""></b><span>برند پشتیبانی‌شده</span></div>
+        </div>
+      </div>
+
+      <!-- --- Cluster card --- -->
+      <aside class="cluster" data-reveal="scale" aria-label="داشبورد مهارت‌ها">
+        <div class="cluster__head">
+          <span><i class="dot"></i>&nbsp; DIAGNOSTIC CLUSTER</span>
+          <span class="en" id="clusterClock">--:--:--</span>
+        </div>
+        <div class="cluster__gauge">
+          <svg id="tach" viewBox="-130 -112 260 168" role="img" aria-label="سنجش توان تخصص: ۹۸ از ۱۰۰">
+            <g id="tachTicks"></g>
+            <path id="tachArc" d="" fill="none" stroke="var(--acc)" stroke-width="7" stroke-linecap="round"
+                  stroke-dasharray="1 1" opacity=".95"/>
+            <path id="tachArcBg" d="" fill="none" stroke="var(--line-2)" stroke-width="7" stroke-linecap="round" opacity=".5"/>
+            <g id="tachNeedle" style="transform:rotate(-90deg);transition:transform 1.9s cubic-bezier(.22,1,.36,1)">
+              <path d="M0 -74 L3.4 -6 L-3.4 -6 Z" fill="var(--acc)"/>
+            </g>
+            <circle cx="0" cy="0" r="9" fill="var(--bg-2)" stroke="var(--acc-line)" stroke-width="2"/>
+            <circle cx="0" cy="0" r="3" fill="var(--acc)"/>
+          </svg>
+          <div class="cluster__read">
+            <b class="num" data-count="98" data-suffix="">۰</b>
+            <small>PRO SCORE / 100</small>
+          </div>
+        </div>
+        <div class="cluster__rows">
+          <div class="cluster__row"><svg><use href="#i-scan"/></svg> عیب‌یابی و دیاگ <b class="en">98%</b></div>
+          <div class="cluster__row"><svg><use href="#i-gear"/></svg> گیربکس اتوماتیک <b class="en">96%</b></div>
+          <div class="cluster__row"><svg><use href="#i-dyno"/></svg> تیونینگ و ریمپ <b class="en">94%</b></div>
+          <div class="cluster__row"><svg><use href="#i-shield"/></svg> ضمانت کتبی خدمات <i class="dot" title="فعال"></i></div>
+        </div>
+      </aside>
+    </div>
+  </div>
+  <div class="hero__marq" aria-hidden="true">
+    <div class="marq" id="marq">
+      <span>عیب‌یابی تخصصی با دستگاه</span><span>ضمانت ۳ ماهه / ۵۰۰۰ کیلومتر</span><span>ریمپ ایمن با دیتاشیت دینو</span>
+      <span>قطعات اصلی با فاکتور</span><span>سرویس در محل تهران و کرج</span><span>گزارش وضعیت مکتوب خودرو</span>
+      <span>عیب‌یابی تخصصی با دستگاه</span><span>ضمانت ۳ ماهه / ۵۰۰۰ کیلومتر</span><span>ریمپ ایمن با دیتاشیت دینو</span>
+      <span>قطعات اصلی با فاکتور</span><span>سرویس در محل تهران و کرج</span><span>گزارش وضعیت مکتوب خودرو</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ STATS ============================ -->
+<section class="section--tight" aria-label="آمار عملکرد">
+  <div class="stats">
+    <div><b class="num" data-count="17">۰</b><small>سال سابقه در کارگاه</small></div>
+    <div><b class="num" data-count="4200" data-suffix="+">۰</b><small>خودرو تعمیر و سرویس‌شده</small></div>
+    <div><b class="num" data-count="310" data-suffix="+">۰</b><small>پروژه تیونینگ و ریمپ</small></div>
+    <div><b class="num" data-count="1240" data-suffix="">۰</b><small>ساعت آموزش تخصصی</small></div>
+  </div>
+</section>
+
+<!-- ============================ ABOUT ============================ -->
+<section class="section" id="about">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker" data-reveal="fade"><i></i>درباره من</p>
+      <h2 class="sec-title" data-reveal>از یک آچار ۱۰ میلی‌متری تا <em>دیاگ‌خوانی حرفه‌ای</em></h2>
+    </div>
+    <div class="about">
+      <figure class="about__media" data-reveal="right">
+        <div class="frame">
+          <img src="./assets/img/portrait.jpg" alt="پرتره امیر رستگاری، استادکار ارشد خودرو در گاراژ" loading="lazy" decoding="async">
+          <figcaption class="frame__cap"><svg><use href="#i-pin"/></svg> کارگاه تخصصی آریا‌دیزل — تهران</figcaption>
+        </div>
+        <div class="about__seal" title="گواهی کیفیت"><img src="./assets/img/badge-iso.jpg" alt="نشان گواهی کیفیت" loading="lazy"></div>
+      </figure>
+
+      <div class="about__txt" data-reveal="left">
+        <p class="dropcap">
+          کارم را در ۱۶ سالگی در لکه‌گیری و تعویض روغن یک تعمیرگاه در خیابان کارگر شروع کردم؛ امروز همان دست‌ها
+          <strong>۴۲۰۰ پرونده تعمیر</strong> را پشت سر گذاشته‌اند و همان کنجکاوی، زیر هر کاپوت دنبال دلیل می‌گردد، نه فقط تعویض قطعه.
+        </p>
+        <p>
+          باور من ساده است: <strong>عیب‌یابی قبل از تعمیر</strong>. هیچ پیچی را باز نمی‌کنم تا وقتی داده‌های سنسورها، تاریخچه خطا و تست کمپرس
+          روی میز نباشد. همین باعث می‌شود هزینه مشتری کمتر و زمان تعمیر کوتاه‌تر شود — و کاری که تحویل می‌دهم، برگردد.
+        </p>
+        <p>
+          در کنار کار فنی، مربی دوره «عیب‌یابی سامانه سوخت‌رسانی انژکتوری» در سازمان فنی‌وحرفه‌ای هستم و برای سه تعمیرگاه
+          استانداردسازی فرآیند پذیرش و چک‌لیست ۴۰ قلمی سرویس پیاده‌سازی کرده‌ام.
+        </p>
+        <div class="about__facts">
+          <div class="fact"><svg><use href="#i-car"/></svg><div><b>متخصص خودروهای اروپایی</b><span>بنز، بی‌‌ام‌و، ولوو، پژو/سی‌یتروئن</span></div></div>
+          <div class="fact"><svg><use href="#i-key"/></svg><div><b>تیونینگ ایمن</b><span>پایه دیتاشیت دینو، نه عدد روی کاغذ</span></div></div>
+          <div class="fact"><svg><use href="#i-shield"/></svg><div><b>ضمانت کتبی</b><span>۳ ماه یا ۵۰۰۰ کیلومتر روی تعمیر</span></div></div>
+          <div class="fact"><svg><use href="#i-users"/></svg><div><b>مربی فنی</b><span>۴۲ نفر نیروی آموزش‌دیده در کارگاه</span></div></div>
+        </div>
+        <div class="tags" style="margin-top:6px">
+          <span class="pill pill--acc"><i></i>دقت در عیب‌یابی</span>
+          <span class="pill"><i></i>مستندسازی کار</span>
+          <span class="pill"><i></i>مدیریت تیم ۶ نفره</span>
+          <span class="pill"><i></i>صداقت با مشتری</span>
+          <span class="pill"><i></i>آموزش نیرو</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ SKILLS ============================ -->
+<section class="section" id="skills">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker" data-reveal="fade"><i></i>مهارت‌های تخصصی</p>
+      <h2 class="sec-title" data-reveal>میز مهارت — <em>از سنسور اکسیژن تا دینو</em></h2>
+      <p class="sec-sub" data-reveal>درصد‌ها بر پایه ارزیابی عملکرد ۲۴ ماه اخیر، آزمون‌های داخلی کارگاه و گواهینامه‌های OEM محاسبه شده‌اند.</p>
+    </div>
+
+    <div class="skills">
+      <div class="bars" id="bars">
+        <div class="bar" data-reveal><div class="bar__top">عیب‌یابی تخصصی موتور و سامانه سوخت (دیاگ)<span class="en">98%</span></div><div class="bar__track"><div class="bar__fill" data-pct="98"></div></div><div class="bar__meta">Oscilloscope · MAF/O₂ · کمپرس‌سنجی · نشتی‌یابی دود</div></div>
+        <div class="bar" data-reveal><div class="bar__top">تعمیر اساسی موتور و سرسیلندر<span class="en">96%</span></div><div class="bar__track"><div class="bar__fill" data-pct="96"></div></div><div class="bar__meta">اورهال کامل · تنظیم تایمینگ · تعویض واشر سرسیلندر</div></div>
+        <div class="bar" data-reveal><div class="bar__top">گیربکس اتوماتیک — AT / DCT / CVT<span class="en">93%</span></div><div class="bar__track"><div class="bar__fill" data-pct="93"></div></div><div class="bar__meta">تعمیر شیرینگرو · تعویض پکیج · ریست ادپتیشن</div></div>
+        <div class="bar" data-reveal><div class="bar__top">برق و الکترونیک خودرو<span class="en">91%</span></div><div class="bar__track"><div class="bar__fill" data-pct="91"></div></div><div class="bar__meta">نقشه‌خوانی CAN · شبکه‌های مالتی‌پلکس · کدنویسی یونیت</div></div>
+        <div class="bar" data-reveal><div class="bar__top">ریمپ ECU و تیونینگ روی دینو<span class="en">89%</span></div><div class="bar__track"><div class="bar__fill" data-pct="89"></div></div><div class="bar__meta">ECU-Slave · WinOLS · لاگ‌گیری جاده‌ای</div></div>
+        <div class="bar" data-reveal><div class="bar__top">سامانه ترمز ABS / ESP و تعلیق<span class="en">94%</span></div><div class="bar__track"><div class="bar__fill" data-pct="94"></div></div><div class="bar__meta">بادانسی جلوبندی · هندسه چرخ · bleed سامانه ESP</div></div>
+        <div class="bar" data-reveal><div class="bar__top">سامانه تهویه و کولر خودرو<span class="en">85%</span></div><div class="bar__track"><div class="bar__fill" data-pct="85"></div></div><div class="bar__meta">شارژ گاز · نشتی UV · تعویض کمپرسور و اواپراتور</div></div>
+        <div class="bar" data-reveal><div class="bar__top">مهندسی معکوس و ساخت قطعه ۳بعدی<span class="en">76%</span></div><div class="bar__track"><div class="bar__fill" data-pct="76"></div></div><div class="bar__meta">طراحی در Fusion 360 · پرینت قطعات پلیمری مقاوم</div></div>
+      </div>
+
+      <div>
+        <div class="radar-wrap" data-reveal="scale">
+          <svg id="radar" direction="rtl" viewBox="0 0 400 330" role="img" aria-label="نمودار راداری مهارت‌های نرم و سخت"></svg>
+        </div>
+        <div class="radar-legend"><span>◆ عمق فنی</span><span>◆ سرعت عمل</span><span>◆ دقت</span><span>◆ مستندسازی</span><span>◆ آموزش</span><span>◆ مدیریت بحران</span></div>
+      </div>
+    </div>
+
+    <div class="techs">
+      <div class="tech" data-reveal><svg><use href="#i-scan"/></svg>Delphi / Launch / Autel</div>
+      <div class="tech" data-reveal><svg><use href="#i-coil"/></svg>WinOLS · ECU-Slave</div>
+      <div class="tech" data-reveal><svg><use href="#i-engine"/></svg>خودروهای دیزل و توربو</div>
+      <div class="tech" data-reveal><svg><use href="#i-battery"/></svg>هیبرید و HV Safety</div>
+      <div class="tech" data-reveal><svg><use href="#i-dyno"/></svg>دینو چهار‌چرخ ۹۰۰ اسب</div>
+      <div class="tech" data-reveal><svg><use href="#i-snow"/></svg>شارژ و عیب‌یابی A/C</div>
+      <div class="tech" data-reveal><svg><use href="#i-gear"/></svg>تایم‌چین و تایم‌تسمه</div>
+      <div class="tech" data-reveal><svg><use href="#i-brake"/></svg>بادانسی سه‌بعدی</div>
+    </div>
+
+    <div class="tools" style="margin-top:clamp(22px,3vw,36px)">
+      <div class="tool" data-reveal><span class="tool__i"><svg><use href="#i-scan"/></svg></span><div><b>دستگاه دیاگ چندمارکه</b><span>Delphi DS150E · Launch X431 V+ · Autel MaxiSys</span></div></div>
+      <div class="tool" data-reveal><span class="tool__i"><svg><use href="#i-dyno"/></svg></span><div><b>دینو غلتکی ۹۰۰ اسب</b><span>MAHA MPRO 4 · لاگ قدرت و گشتاور</span></div></div>
+      <div class="tool" data-reveal><span class="tool__i"><svg><use href="#i-coil"/></svg></span><div><b>تست کمپرس و نشتی‌سنجی دود</b><span>سنجش سلامت موتور قبل از باز کردن</span></div></div>
+      <div class="tool" data-reveal><span class="tool__i"><svg><use href="#i-susp"/></svg></span><div><b>دستگاه بادانسی و زوایای چرخ</b><span>هندسه سه‌بعدی · تنظیم کامبر/کستر</span></div></div>
+      <div class="tool" data-reveal><span class="tool__i"><svg><use href="#i-battery"/></svg></span><div><b>تجهیزات HV ایمنی هیبرید</b><span>دستکش کلاس ۰ · عایق‌سنج · کیت قفل‌کردن</span></div></div>
+      <div class="tool" data-reveal><span class="tool__i"><svg><use href="#i-flag"/></svg></span><div><b>بالابر دو‌ستونه ۴ تن</b><span>دو دستگاه · میز کار متحرک · آچار بادی</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ SERVICES ============================ -->
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="sec-head center">
+      <p class="kicker" data-reveal="fade"><i></i>خدمات</p>
+      <h2 class="sec-title" data-reveal>کاری که روی خودرویت انجام می‌شود</h2>
+      <p class="sec-sub" data-reveal>هر خدمت با چک‌لیست، عکس قبل/بعد و گزارش فنی برای مالک تمام می‌شود.</p>
+    </div>
+    <div class="svc">
+      <article class="card svc__card" data-reveal><span class="svc__ic"><svg><use href="#i-scan"/></svg></span>
+        <h3>عیب‌یابی تخصصی و دیاگ</h3><span class="en">DIAGNOSIS · 45 MIN</span>
+        <p>خوانش خطاها، لاگ زنده سنسورها و تست عملی برای رسیدن به علت ریشه‌ای — نه حدس و آزمون‌وخطا.</p>
+        <ul><li>گزارش کتبی + نمودار سنسورها</li><li>تست کمپرس و نشتی‌یابی دود</li><li>هزینه در صورت تعمیر، از فاکتور کسر می‌شود</li></ul>
+      </article>
+      <article class="card svc__card" data-reveal><span class="svc__ic"><svg><use href="#i-engine"/></svg></span>
+        <h3>تعمیر اساسی موتور</h3><span class="en">ENGINE OVERHAUL · 2–5 DAYS</span>
+        <p>اورهال کامل، تنظیم تایمینگ، تعویض یاتاقان و رینگ، بازسازی سرسیلندر با تست فشار و نشتی.</p>
+        <ul><li>آب‌بندی و روغن‌بندی استاندارد کارخانه</li><li>مستندسازی گشتاور آچار هر پیچ</li><li>ضمانت ۳ ماهه / ۵۰۰۰ کیلومتر</li></ul>
+      </article>
+      <article class="card svc__card" data-reveal><span class="svc__ic"><svg><use href="#i-gear"/></svg></span>
+        <h3>گیربکس اتوماتیک</h3><span class="en">AT · DCT · CVT</span>
+        <p>تعمیر شیرینگرو، تعویض دیسک‌پلیت، سرویس روغن و فیلتر، ریست ادپتیشن و تست جاده‌ای.</p>
+        <ul><li>تخصص: ۶T، ۷G‑DCT، CVT جاتکو</li><li>آنالیز وضعیت روغن قبل از باز کردن</li><li>تست دمای کاری و لغزش کلاچ</li></ul>
+      </article>
+      <article class="card svc__card" data-reveal><span class="svc__ic"><svg><use href="#i-dyno"/></svg></span>
+        <h3>ریمپ و تیونینگ ایمن</h3><span class="en">ECU REMAP · STAGE 1–2</span>
+        <p>افزایش قدرت و گشتاور در محدوده ایمن قطعات، همراه دیتاشیت دینو قبل و بعد از کار.</p>
+        <ul><li>فایل اصلی خودرو همیشه نگهداری می‌شود</li><li>لاگ جاده‌ای و تنظیم AFR دقیق</li><li>مخصوص: TU5، EF7، M57، EA888</li></ul>
+      </article>
+      <article class="card svc__card" data-reveal><span class="svc__ic"><svg><use href="#i-battery"/></svg></span>
+        <h3>برق، شبکه و ECU</h3><span class="en">ELECTRICAL · CAN BUS</span>
+        <p>عیب‌یابی اتصالی، نقشه‌خوانی، کدنویسی یونیت‌ها، کدنویسی کلید و فعال‌سازی آپشن‌ها.</p>
+        <ul><li>تست مصرف خواب و شارژ دینام</li><li>کدنویسی یونیت‌های تعویضی</li><li>رفع خطای کیسه‌هوا و ABS</li></ul>
+      </article>
+      <article class="card svc__card" data-reveal><span class="svc__ic"><svg><use href="#i-brake"/></svg></span>
+        <h3>ترمز، تعلیق و هندسه</h3><span class="en">BRAKE · SUSPENSION</span>
+        <p>تعویض لنت و دیسک، بالانس، بادانسی سه‌بعدی، رفع صدای جلوبندی و تنظیم هندسه چرخ.</p>
+        <ul><li>تست ضخامت و تخت‌کردن دیسک</li><li>بادانسی با گزارش قبل/بعد</li><li>تعویض طبق، سیبک و کمک‌فنر</li></ul>
+      </article>
+      <article class="card svc__card" data-reveal><span class="svc__ic"><svg><use href="#i-snow"/></svg></span>
+        <h3>سامانه تهویه و کولر</h3><span class="en">A/C SERVICE</span>
+        <p>شارژ گاز R134a/R1234yf، نشتی‌یابی با UV، تعویض کمپرسور و شست‌وشوی کانال‌ها.</p>
+        <ul><li>تست عملکرد در هوای شرجی</li><li>ضدبو و شست‌وشوی اواپراتور</li></ul>
+      </article>
+      <article class="card svc__card" data-reveal><span class="svc__ic"><svg><use href="#i-car"/></svg></span>
+        <h3>سرویس دوره‌ای کامل</h3><span class="en">FULL SERVICE · 40 PTS</span>
+        <p>چک‌لیست ۴۰ قلمی، روغن و فیلتر اصلی، بررسی تسمه‌ها، شلنگ‌ها، فنر و سطح مایعات.</p>
+        <ul><li>گزارش وضعیت با عکس برای مالک</li><li>یادآوری هوشمند سرویس بعدی</li></ul>
+      </article>
+      <article class="card svc__card" data-reveal><span class="svc__ic"><svg><use href="#i-shield"/></svg></span>
+        <h3>کارشناسی قبل از خرید</h3><span class="en">PRE‑PURCHASE INSPECTION</span>
+        <p>بررسی بدنه، شاسی، موتور، گیربکس و تاریخچه سرویس — همراه گزارش خرید یا انصراف.</p>
+        <ul><li>آنالیز رنگ و ضخامت‌سنجی</li><li>تست جاده‌ای و دیاگ کامل</li><li>گزارش در ۲۴ ساعت</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ EXPERIENCE ============================ -->
+<section class="section" id="exp">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker" data-reveal="fade"><i></i>سوابق شغلی</p>
+      <h2 class="sec-title" data-reveal>مسیر ۱۷ ساله‌ی <em>روی زمین گاراژ</em></h2>
+    </div>
+    <div class="tl">
+      <article class="tl__item" data-reveal>
+        <div class="tl__head"><h3 class="tl__job">سرپرست واحد عیب‌یابی و تیونینگ</h3><span class="tl__co">مرکز سرویس تخصصی آریا‌دیزل</span><span class="tl__when en">2021 — Now</span></div>
+        <p>راه‌اندازی واحد دیاگ و دینو، مدیریت تیم ۶ نفره، تدوین استاندارد «عیب‌یابی قبل از تعمیر» و کاهش ۳۸٪ زمان تحویل.
+          مسئول پرونده‌های بنز، بی‌‌ام‌و، ولوو و خودروهای هیبریدی.</p>
+        <div class="tl__win"><svg><use href="#i-flag"/></svg><div><b>دستاورد کلیدی</b><span>نصب دینو چهارچرخ و راه‌اندازی بسته «ریمپ با دیتاشیت» → ۳۱۰ پروژه در ۳ سال</span></div></div>
+        <div class="tags"><span class="pill">مدیریت تیم</span><span class="pill">MAHA MPRO 4</span><span class="pill">ISO 9001</span><span class="pill">Hybrid HV</span></div>
+      </article>
+      <article class="tl__item" data-reveal>
+        <div class="tl__head"><h3 class="tl__job">تکنسین ارشد موتور و گیربکس</h3><span class="tl__co">خدمات خودروی پارس‌توربو</span><span class="tl__when en">2017 — 2021</span></div>
+        <p>بیش از ۱۴۰۰ تعمیر موتور و ۳۲۰ تعمیر گیربکس اتوماتیک؛ مسئول بازسازی گیربکس ۶ سرعته اتوماتیک و سامانه دیزل توربو.</p>
+        <div class="tl__win"><svg><use href="#i-flag"/></svg><div><b>دستاورد کلیدی</b><span>کاهش نرخ مرجوعی کار از ۹٪ به ۱.۵٪ با چک‌لیست دو مرحله‌ای تحویل</span></div></div>
+        <div class="tags"><span class="pill">AT / DCT</span><span class="pill">Diesel Common‑Rail</span><span class="pill">QC Checklist</span></div>
+      </article>
+      <article class="tl__item" data-reveal>
+        <div class="tl__head"><h3 class="tl__job">تکنسین ارشد برقی و الکترونیک</h3><span class="tl__co">گاراج مرکزی تهران (امداد خودرو)</span><span class="tl__when en">2013 — 2017</span></div>
+        <p>خدمات سیار و امداد جاده‌ای، عیب‌یابی شبکه CAN، تعمیرات اورژانسی موتور و رفع خطاهای کیسه‌هوا، ABS و یونیت بدنه.</p>
+        <div class="tl__win"><svg><use href="#i-flag"/></svg><div><b>دستاورد کلیدی</b><span>طراحی «جعبه امداد دیاگ» سیار — میانبر پاسخ‌گویی در ۱۸ ماه از ۵۲ به ۲۴ دقیقه</span></div></div>
+        <div class="tags"><span class="pill">Roadside</span><span class="pill">CAN Bus</span><span class="pill">Wiring Diagram</span></div>
+      </article>
+      <article class="tl__item" data-reveal>
+        <div class="tl__head"><h3 class="tl__job">تعمیرکار و بازآموز نیرو</h3><span class="tl__co">تعمیرگاه اعتماد (مستقل)</span><span class="tl__when en">2009 — 2013</span></div>
+        <p>سرویس دوره‌ای، تنظیم موتور، تعلیق و ترمز خودروهای ایرانی؛ شروع بازسازی گیربکس‌های دستی و آموزش سه نیروی فنی.</p>
+        <div class="tl__win"><svg><use href="#i-flag"/></svg><div><b>دستاورد کلیدی</b><span>تأسیس اولین در محلِ ثبت خطای مکتوب در تعمیرگاه — پایهٔ گزارش‌دهی امروز</span></div></div>
+        <div class="tags"><span class="pill">Payam / Peugeot</span><span class="pill">Manual Gearbox</span><span class="pill">Training</span></div>
+      </article>
+    </div>
+
+    <div class="grid grid--edu">
+      <div class="card" data-reveal>
+        <h3 class="row" style="font-size:1.05rem;font-weight:900;gap:9px"><svg style="width:20px;height:20px;color:var(--acc)"><use href="#i-engine"/></svg> تحصیلات</h3>
+        <ul class="stack" style="margin-top:12px">
+          <li class="row" style="gap:12px;align-items:flex-start"><span class="cert__yr en">۱۳۹۰</span><div><b style="display:block">کارشناسی مهندسی مکانیک — سامانه خودرو</b><span style="font-size:.8rem;color:var(--ink-3)">دانشگاه فنی و حرفه‌ای تهران · پایان‌نامه: بهینه‌سازی منحنی گشتاور موتور TU5</span></div></li>
+          <li class="hr-fade"></li>
+          <li class="row" style="gap:12px;align-items:flex-start"><span class="cert__yr en">۱۳۸۷</span><div><b style="display:block">دیپلم فنی — تعمیر موتور دیزل و بنزین</b><span style="font-size:.8rem;color:var(--ink-3)">دانشکده فنی شهید باهنر · معدل ۱۸.۹</span></div></li>
+        </ul>
+      </div>
+      <div class="card" data-reveal>
+        <h3 class="row" style="font-size:1.05rem;font-weight:900;gap:9px"><svg style="width:20px;height:20px;color:var(--acc)"><use href="#i-shield"/></svg> گواهینامه‌ها</h3>
+        <div class="cert" style="grid-template-columns:1fr;margin-top:12px">
+          <div class="cert__c"><span class="cert__yr en">۱۴۰۳</span><div><h4>Hybrid &amp; EV High‑Voltage Safety</h4><p>مؤسسه FAAAM · ایمنی سامانه فشارقوی</p></div></div>
+          <div class="cert__c"><span class="cert__yr en">۱۴۰۱</span><div><h4>استادکار درجه یک فنی‌وحرفه‌ای</h4><p>سازمان فنی و حرفه‌ای · رشته تعمیر موتور</p></div></div>
+          <div class="cert__c"><span class="cert__yr en">۱۳۹۹</span><div><h4>Bosch Car Service — دیزل و Common‑Rail</h4><p>دوره تخصصی ۱۲۰ ساعته</p></div></div>
+          <div class="cert__c"><span class="cert__yr en">۱۳۹۷</span><div><h4>گیربکس اتوماتیک ZF 8HP</h4><p>کارگاه تخصصی گیربکس · سطح پیشرفته</p></div></div>
+          <div class="cert__c"><span class="cert__yr en">۱۳۹۵</span><div><h4>مربی فنی سطح ۲</h4><p>سازمان فنی و حرفه‌ای</p></div></div>
+          <div class="cert__c"><span class="cert__yr en">۱۳۹۳</span><div><h4>ایمنی کارگاه و اطفای حریق</h4><p>HSE صنعتی · تجدید هر ۳ سال</p></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ WORK ============================ -->
+<section class="section" id="work">
+  <div class="wrap">
+    <div class="sec-head between" style="max-width:none;align-items:end">
+      <div class="sec-head" style="margin:0">
+        <p class="kicker" data-reveal="fade"><i></i>نمونه‌کارها</p>
+        <h2 class="sec-title" data-reveal>از روی میز کار — <em>واقعِ کار</em></h2>
+      </div>
+      <div class="filters no-print" role="group" aria-label="فیلتر نمونه‌کارها" id="galFilters">
+        <button data-f="all" aria-pressed="true">همه</button>
+        <button data-f="engine" aria-pressed="false">موتور</button>
+        <button data-f="gear" aria-pressed="false">گیربکس</button>
+        <button data-f="tune" aria-pressed="false">تیونینگ</button>
+        <button data-f="detail" aria-pressed="false">دیتیلینگ فنی</button>
+      </div>
+    </div>
+
+    <div class="gal">
+      <figure class="shot shot--compare" data-cat="detail" data-reveal="scale">
+        <div class="compare" id="cmp">
+          <img class="compare__bot" src="./assets/img/work-before.jpg" alt="موتور قبل از سرویس" loading="lazy">
+          <img class="compare__top" id="cmpTop" src="./assets/img/work-after.jpg" alt="موتور بعد از سرویس و شست‌وشو" loading="lazy">
+          <div class="compare__line" id="cmpLine"><span class="compare__knob"><svg style="margin-inline-start:-6px"><use href="#i-left"/></svg><svg style="margin-inline-end:-6px"><use href="#i-right"/></svg></span></div>
+          <span class="compare__tag compare__tag--a">بعد</span>
+          <span class="compare__tag compare__tag--b">قبل</span>
+          <input type="range" min="0" max="100" value="50" id="cmpRange" aria-label="مقایسه قبل و بعد از سرویس">
+        </div>
+        <span class="tag">قبل / بعد — بکش</span>
+      </figure>
+      <figure class="shot shot--tall" data-cat="engine" tabindex="0" role="button" aria-label="بزرگ‌نمایی تصویر" data-reveal>
+        <img src="./assets/img/work-engine.jpg" alt="تعمیر موتور با ابزار دقیق" loading="lazy">
+        <span class="tag">موتور EF7</span>
+        <figcaption><b>اورهال کامل و تنظیم تایمینگ</b><span class="en">168h · Tehran</span></figcaption>
+      </figure>
+      <figure class="shot" data-cat="gear" tabindex="0" role="button" aria-label="بزرگ‌نمایی تصویر" data-reveal>
+        <img src="./assets/img/work-detail.jpg" alt="بازسازی گیربکس اتوماتیک" loading="lazy">
+        <span class="tag">گیربکس</span>
+        <figcaption><b>تعویض پکیج ۶T + سرویس روغن</b><span class="en">3d · 412 Nm</span></figcaption>
+      </figure>
+      <figure class="shot" data-cat="tune" tabindex="0" role="button" aria-label="بزرگ‌نمایی تصویر" data-reveal>
+        <img src="./assets/img/work-tuning.jpg" alt="ریمپ ECU روی دینو" loading="lazy">
+        <span class="tag">ریمپ</span>
+        <figcaption><b>Stage 1 روی دینو — ۱۵٪ قدرت</b><span class="en">+42 hp</span></figcaption>
+      </figure>
+      <figure class="shot shot--wide" data-cat="engine" tabindex="0" role="button" aria-label="بزرگ‌نمایی تصویر" data-reveal>
+        <img src="./assets/img/work-brakes.jpg" alt="تعویض دیسک و لنت ترمز" loading="lazy">
+        <span class="tag">ترمز و تعلیق</span>
+        <figcaption><b>ارتقای سامانه ترمز جلو + بادانسی</b><span class="en">ceramic · 355mm</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ TESTIMONIALS ============================ -->
+<section class="section" id="voices">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker" data-reveal="fade"><i></i>صدای مشتری</p>
+      <h2 class="sec-title" data-reveal>گزارش‌هایی که بعد از تحویل رسید</h2>
+    </div>
+    <div class="tst">
+      <div class="tst__side" data-reveal="right">
+        <div class="score">
+          <div class="score__big"><b class="num" data-count="49" data-div="10">۰</b><span style="display:grid;gap:3px"><span class="stars" aria-label="امتیاز ۴.۹ از ۵"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span style="font-size:.74rem;color:var(--ink-3)">میانگین ۲۱۷ نظر ثبت‌شده</span></span></div>
+          <div class="score__bar">
+            <div>دقت فنی <i style="--w:98%"></i><span class="en">98%</span></div>
+            <div>سرعت تحویل <i style="--w:94%"></i><span class="en">94%</span></div>
+            <div>قیمت منصفانه <i style="--w:91%"></i><span class="en">91%</span></div>
+            <div>پشتیبانی بعد از کار <i style="--w:96%"></i><span class="en">96%</span></div>
+          </div>
+        </div>
+        <div class="avail" id="avail"></div>
+      </div>
+      <div>
+        <div class="tst__stage" id="tstStage">
+          <blockquote class="tst__slide on"><p class="tst__q">سه ماه بود با یک صدای لرزش در دور آرام دست‌به‌دست می‌شدم. امیر با دودبلاور و لاگ سنسورها گفت مشکل از واشر مبدل کاتالیز نیست، سنسور دور موتور است — یک روز تمام شد و صدا مرد.</p>
+            <footer class="tst__who"><span class="tst__av">م</span><span><b>مهدی کاویانی</b><span>بنز C200 کلاس ۲۰۱۴ · عیب‌یابی</span></span></footer></blockquote>
+          <blockquote class="tst__slide"><p class="tst__q">گیربکس ال۹۰ را دو جا گفتم باید کامل باز شود؛ اینجا با تعویض شیرینگرو و سرویس روغن درست شد و حدود ۲۲ میلیون درآمدم. بعدش هم یک فایل اکسل از همه قطعات تعویضی داد.</p>
+            <footer class="tst__who"><span class="tst__av">ز</span><span><b>زهرا موسوی</b><span>دنا پلاس توربو · گیربکس اتوماتیک</span></span></footer></blockquote>
+          <blockquote class="tst__slide"><p class="tst__q">برای ریمپ EF7 انتظار عدد قهرمانانه نداشتم، ولی دیتاشیت دینو قبل و بعد و توضیح ریسک‌ها واقعاً حرفه‌ای بود. ماشین نرم‌تر شد و مصرف هم یکی دو دهم کم کرد.</p>
+            <footer class="tst__who"><span class="tst__av">س</span><span><b>سامان رهبری</b><span>سمند سورن پلاس · تیونینگ</span></span></footer></blockquote>
+          <blockquote class="tst__slide"><p class="tst__q">قبل از خرید یک بی‌‌ام‌و دست‌دوم، گزارش ۱۱ صفحه‌ای با عکس و تست رنگ گرفتم؛ همان گزارش باعث شد از خرید یک ماشین تصادفی منصرف شوم. پولم را نجات داد.</p>
+            <footer class="tst__who"><span class="tst__av">پ</span><span><b>پیمان آذرمهر</b><span>کارشناسی قبل از خرید</span></span></footer></blockquote>
+          <blockquote class="tst__slide"><p class="tst__q">برای ناوگان ۱۲ خودروی شرکت، برنامه سرویس پیش‌گیرانه چید. یک سال است هیچ خودرویی وسط کار در جاده نمانده و هزینه تعمیرات ناوگان ۳۱٪ کم شده.</p>
+            <footer class="tst__who"><span class="tst__av">ن</span><span><b>نگار شریفی</b><span>مدیر ناوگان، شرکت پخش آیدا</span></span></footer></blockquote>
+        </div>
+        <div class="tst__ctrl no-print">
+          <button class="iconbtn" id="tPrev" aria-label="نظر قبلی"><svg><use href="#i-right"/></svg></button>
+          <button class="iconbtn" id="tNext" aria-label="نظر بعدی"><svg><use href="#i-left"/></svg></button>
+          <div class="dots" id="tDots" role="tablist" aria-label="انتخاب نظر"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ PRICING ============================ -->
+<section class="section" id="plans">
+  <div class="wrap">
+    <div class="sec-head between" style="max-width:none;align-items:end">
+      <div class="sec-head" style="margin:0">
+        <p class="kicker" data-reveal="fade"><i></i>تعرفه‌ها</p>
+        <h2 class="sec-title" data-reveal>قیمت شفاف، بدون غافلگیری</h2>
+        <p class="sec-sub">تعرفه‌های ۱۴۰۵ — قطعات جدا محاسبه می‌شود و همیشه قبل از خرید، فاکتور پیش‌بینی به مالک داده می‌شود.</p>
+      </div>
+      <div class="toggle-row no-print">
+        <span>مشتری انفرادی</span>
+        <button class="switch" id="discSwitch" role="switch" aria-checked="false" aria-label="تخفیف ناوگان ۱۵٪"></button>
+        <span>ناوگان شرکتی <b style="color:var(--acc)">−۱۵٪</b></span>
+      </div>
+    </div>
+    <div class="price">
+      <article class="card plan" data-reveal>
+        <div class="plan__name"><span class="svc__ic" style="width:40px;height:40px;border-radius:12px"><svg style="width:20px;height:20px"><use href="#i-scan"/></svg></span><b>عیب‌یابی پایه</b></div>
+        <div class="plan__price"><b class="price-num" data-v="890000">۸۹۰٬۰۰۰</b><span>تومان</span></div>
+        <p style="font-size:.84rem;color:var(--ink-3)">حدود ۴۵ دقیقه · گزارش کتبی</p>
+        <ul>
+          <li><svg><use href="#i-check"/></svg> دیاگ کامل و خوانش تاریخچه خطا</li>
+          <li><svg><use href="#i-check"/></svg> بررسی ۲۰ قلم ایمنی</li>
+          <li><svg><use href="#i-check"/></svg> کسر هزینه از فاکتور تعمیر</li>
+          <li class="off"><svg><use href="#i-x"/></svg> تست روی دینو</li>
+        </ul>
+        <a class="btn btn--dark btn--block" href="#contact" data-sfx>رزرو این بسته</a>
+      </article>
+      <article class="card plan plan--best" data-reveal>
+        <span class="card__badge">محبوب‌ترین</span>
+        <div class="plan__name"><span class="svc__ic" style="width:40px;height:40px;border-radius:12px"><svg style="width:20px;height:20px"><use href="#i-car"/></svg></span><b>سرویس کامل دوره‌ای</b></div>
+        <div class="plan__price"><b class="price-num" data-v="2450000">۲٬۴۵۰٬۰۰۰</b><span>تومان</span></div>
+        <p style="font-size:.84rem;color:var(--ink-3)">نیم روز · چک‌لیست ۴۰ قلمی</p>
+        <ul>
+          <li><svg><use href="#i-check"/></svg> روغن و هر چهار فیلتر (اصلی، با فاکتور)</li>
+          <li><svg><use href="#i-check"/></svg> بررسی ترمز، تعلیق و تایر</li>
+          <li><svg><use href="#i-check"/></svg> به‌روزرسانی نرم‌افزار یونیت‌ها</li>
+          <li><svg><use href="#i-check"/></svg> گزارش عکس‌دار + ضمانت ۱ ماهه</li>
+        </ul>
+        <a class="btn btn--solid btn--block" href="#contact" data-sfx>رزرو این بسته</a>
+      </article>
+      <article class="card plan" data-reveal>
+        <div class="plan__name"><span class="svc__ic" style="width:40px;height:40px;border-radius:12px"><svg style="width:20px;height:20px"><use href="#i-dyno"/></svg></span><b>تیونینگ و تعمیر اساسی</b></div>
+        <div class="plan__price"><b style="font-size:1.5rem">از</b><b class="price-num" data-v="6900000">۶٬۹۰۰٬۰۰۰</b><span>تومان</span></div>
+        <p style="font-size:.84rem;color:var(--ink-3)">قیمت نهایی بعد از بررسی فنی</p>
+        <ul>
+          <li><svg><use href="#i-check"/></svg> ریمپ Stage 1 + دیتاشیت دینو قبل/بعد</li>
+          <li><svg><use href="#i-check"/></svg> اورهال موتور یا تعمیر گیربکس</li>
+          <li><svg><use href="#i-check"/></svg> ضمانت ۳ ماه / ۵۰۰۰ کیلومتر</li>
+          <li><svg><use href="#i-check"/></svg> پشتیبانی و تنظیم مجدد رایگان</li>
+        </ul>
+        <a class="btn btn--dark btn--block" href="#contact" data-sfx>مشورت فنی رایگان</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ FAQ ============================ -->
+<section class="section section--tight" id="faq">
+  <div class="wrap">
+    <div class="sec-head center"><p class="kicker" data-reveal="fade"><i></i>سؤالات متداول</p><h2 class="sec-title" data-reveal>قبل از این‌که زنگ بزنی</h2></div>
+    <div class="faq" id="faq">
+      <div class="q" data-reveal><button aria-expanded="false"><span class="num en">01</span> آیا سرویس در محل هم انجام می‌دهید؟<span class="pm"></span></button><div class="q__a"><div><p>بله — برای تهران و کرج، سرویس دوره‌ای، عیب‌یابی اولیه و کارشناسی خرید در محل شما انجام می‌شود. کارهای سنگین مثل اورهال و گیربکس در کارگاه انجام می‌شود، چون به بالابر، دینو و ابزار ثابت نیاز دارد.</p></div></div></div>
+      <div class="q" data-reveal><button aria-expanded="false"><span class="num en">02</span> گارانتی تعمیرات شامل چه چیزی می‌شود؟<span class="pm"></span></button><div class="q__a"><div><p>هر تعمیر فنی ۳ ماه یا ۵۰۰۰ کیلومتر (هر کدام زودتر برسد) ضمانت کتبی دارد. قطعات، گارانتی شرکتی خودِ قطعه را دارند و فاکتورشان به پرونده خودرو اضافه می‌شود.</p></div></div></div>
+      <div class="q" data-reveal><button aria-expanded="false"><span class="num en">03</span> هزینه دیاگ جدا گرفته می‌شود؟<span class="pm"></span></button><div class="q__a"><div><p>هزینه عیب‌یابی پایه ۸۹۰٬۰۰۰ تومان است و اگر تعمیر را همین‌جا انجام بدهی، این مبلغ از فاکتور نهایی کسر می‌شود. گزارش فنی هم همیشه مال خودت است.</p></div></div></div>
+      <div class="q" data-reveal><button aria-expanded="false"><span class="num en">04</span> ریمپ به موتور یا گیربکس آسیب می‌زند؟<span class="pm"></span></button><div class="q__a"><div><p>ریمپ در محدوده‌ای نوشته می‌شود که فشار روی پیستون، دمای اگزوز و محدودیت گیربکس رعایت شود؛ قبل از کار سلامت موتور باید در تست کمپرس و لاگ تأیید شده باشد. دیتاشیت دینو و فایل اصلی خودرو هم بکاپ می‌شود تا هر وقت خواستی برگردانی.</p></div></div></div>
+      <div class="q" data-reveal><button aria-expanded="false"><span class="num en">05</span> خودروهای هیبریدی و برقی کار می‌کنید؟<span class="pm"></span></button><div class="q__a"><div><p>روی هیبرید (تویوتا، هیوندای و چری) با گواهینامه ایمنی فشارقوی کار می‌کنم: سرویس اینورتر، تعویض ماژول باتری و عیب‌یابی سامانه ترمز احساخی. برای خودروهای تمام‌برقی فقط سطح ۱ (شارژ، ترمز، تعلیق، نرم‌افزار).</p></div></div></div>
+      <div class="q" data-reveal><button aria-expanded="false"><span class="num en">06</span> چقدر طول می‌کشد؟<span class="pm"></span></button><div class="q__a"><div><p>عیب‌یابی همان روز، سرویس کامل نیم روز و تعمیر اساسی بین ۲ تا ۵ روز کاری. وضعیت کار را هر شب در قالب یک گزارش کوتاه پیامکی دریافت می‌کنی.</p></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ CONTACT ============================ -->
+<section class="section" id="contact">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker" data-reveal="fade"><i></i>تماس و رزرو</p>
+      <h2 class="sec-title" data-reveal>یک پیام بفریس‌د؛ <em>ظرف دو ساعت</em> جواب می‌آید</h2>
+      <p class="sec-sub">اطلاعات این صفحه نمونه (فیک) و برای تست سایت است.</p>
+    </div>
+    <div class="contact">
+      <form class="form card" id="bookForm" novalidate data-reveal="right">
+        <div class="field-row">
+          <div class="field"><label for="f-name">نام و نام خانوادگی *</label><input id="f-name" name="name" type="text" autocomplete="name" required placeholder="مثلاً مهدی کاویانی"><span class="err">نام را کامل بنویس (حداقل ۳ حرف).</span></div>
+          <div class="field"><label for="f-phone">شماره تماس *</label><input id="f-phone" name="phone" type="tel" inputmode="tel" required placeholder="09xxxxxxxxx" dir="ltr" style="text-align:end"><span class="err">یک شماره موبایل ۱۱ رقمی معتبر وارد کن.</span></div>
+        </div>
+        <div class="field-row">
+          <div class="field"><label for="f-car">خودرو</label><input id="f-car" name="car" type="text" placeholder="مدل، سال و موتور — مثلاً 320i 2013 N20"></div>
+          <div class="field"><label for="f-svc">خدمت موردنظر *</label>
+            <select id="f-svc" name="service" required>
+              <option value="">انتخاب کن…</option>
+              <option>عیب‌یابی و دیاگ</option><option>سرویس دوره‌ای کامل</option><option>تعمیر موتور</option>
+              <option>گیربکس اتوماتیک</option><option>ریمپ و تیونینگ</option><option>برق و الکترونیک</option>
+              <option>ترمز و تعلیق</option><option>کارشناسی قبل از خرید</option><option>سایر</option>
+            </select><span class="err">یک خدمت را انتخاب کن.</span></div>
+        </div>
+        <div class="field-row">
+          <div class="field"><label for="f-date">تاریخ ترجیحی</label><input id="f-date" name="date" type="date"></div>
+          <div class="field"><label for="f-km">کارکرد (کیلومتر)</label><input id="f-km" name="km" type="number" min="0" step="500" placeholder="مثلاً 148000" dir="ltr" style="text-align:end"></div>
+        </div>
+        <div class="field"><label for="f-msg">شرح مشکل *</label><textarea id="f-msg" name="message" required placeholder="صدا، زمان وقوع، خطای روشن‌شده، کارهایی که قبلاً انجام شده…"></textarea><span class="err">حداقل ۱۵ حرف بنویس تا بتوانم نظر بدهم.</span></div>
+        <label class="chk"><input type="checkbox" id="f-consent" required><span>موافقم مشخصات بالا برای هماهنگی وقت استفاده شود (این فرم دمو است و جایی ارسال نمی‌شود).</span></label>
+        <div class="row" style="gap:10px;margin-top:4px">
+          <button class="btn btn--solid" type="submit" data-magnet data-sfx><svg><use href="#i-check"/></svg> ثبت درخواست</button>
+          <button class="btn btn--ghost" type="button" id="waBtn" data-sfx><svg><use href="#i-whats"/></svg> ارسال در واتس‌اپ</button>
+        </div>
+        <p class="form__note"><svg><use href="#i-shield"/></svg> اطلاعات فقط در همین مرورگر پردازش می‌شود؛ این نسخه بک‌اند ندارد.</p>
+      </form>
+
+      <div class="stack" data-reveal="left">
+        <div class="info">
+          <a class="info__i" href="tel:+989120000000"><svg><use href="#i-phone"/></svg><span style="display:grid"><span>تلفن کارگاه (نمونه)</span><b class="en" style="font-size:1rem">0912 000 0000</b></span></a>
+          <a class="info__i" href="mailto:resume@example.com"><svg><use href="#i-mail"/></svg><span style="display:grid"><span>ایمیل (نمونه)</span><b class="en" style="font-size:.95rem">resume@example.com</b></span></a>
+          <span class="info__i"><svg><use href="#i-pin"/></svg><span style="display:grid"><span>کارگاه</span><b>تهران، خیابان کارگر شمالی، پاساژ فنی آریا، پلاک ۲۱۴</b></span></span>
+          <a class="info__i" href="https://wa.me/989120000000" target="_blank" rel="noopener"><svg><use href="#i-whats"/></svg><span style="display:grid"><span>واتس‌اپ</span><b class="en" style="font-size:.95rem">+98 912 000 0000</b></span></a>
+        </div>
+        <div class="hours">
+          <h4><svg><use href="#i-clock"/></svg> ساعت کاری <span class="en" id="faToday" style="margin-inline-start:auto;color:var(--ink-3);font-weight:600;font-size:.72rem"></span></h4>
+          <table id="hoursTable"></table>
+        </div>
+        <div class="map">
+          <div class="map__pin"><svg><use href="#i-pin"/></svg><b>کارگاه آریا‌دیزل</b><span>موقعیت نمونه — نقشک تزیینی</span></div>
+        </div>
+        <button class="btn btn--ghost btn--block no-print" id="icsBtn" data-sfx><svg><use href="#i-cal"/></svg> افزودن اولین وقت خالی به تقویم (.ics)</button>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============================ FOOTER ============================ -->
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr__grid">
+      <div class="ftr__brand">
+        <a class="brand" href="#home"><span class="brand__mark"><svg><use href="#i-wrench"/></svg></span><span class="brand__txt">امیر رستگاری<small class="en">MASTER TECH</small></span></a>
+        <p>رزومهٔ کاری یک مکانیک حرفه‌ای — ساخته‌شده با HTML، CSS و JavaScript خالص، بدون هیچ کتابخانه بیرونی.
+          تمام اعداد، مشتریان و قیمت‌ها <b>نمونه‌ای</b> هستند.</p>
+        <div class="social no-print">
+          <a class="iconbtn" href="tel:+989120000000" aria-label="تماس تلفنی"><svg><use href="#i-phone"/></svg></a>
+          <a class="iconbtn" href="mailto:resume@example.com" aria-label="ایمیل"><svg><use href="#i-mail"/></svg></a>
+          <a class="iconbtn" href="https://wa.me/989120000000" target="_blank" rel="noopener" aria-label="واتس‌اپ"><svg><use href="#i-whats"/></svg></a>
+          <a class="iconbtn" href="#home" aria-label="تلگرام (نمونه)"><svg><use href="#i-telegram"/></svg></a>
+        </div>
+      </div>
+      <div><h5>بخش‌ها</h5><ul><li><a href="#about">درباره من</a></li><li><a href="#skills">مهارت‌ها</a></li><li><a href="#services">خدمات</a></li><li><a href="#exp">سوابق و تحصیلات</a></li></ul></div>
+      <div><h5>بیشتر</h5><ul><li><a href="#work">نمونه‌کارها</a></li><li><a href="#voices">نظرات</a></li><li><a href="#plans">تعرفه‌ها</a></li><li><a href="#faq">سؤالات متداول</a></li></ul></div>
+      <div><h5>اقدام سریع</h5><ul class="no-print"><li><a href="#contact">رزرو وقت عیب‌یابی</a></li><li><a href="#" id="printBtn2">دریافت رزومه PDF</a></li><li><a href="#contact">مشاوره ناوگان شرکتی</a></li></ul>
+        <p style="font-size:.78rem;color:var(--ink-3);margin-top:10px">پاسخ‌گویی در ساعت کاری: کمتر از ۲ ساعت</p>
+      </div>
+    </div>
+    <div class="ftr__big" aria-hidden="true">RESTGARI</div>
+    <div class="ftr__base">
+      <span>© <span class="en" id="yr">2026</span> — طراحی و کدنویسی: نمونه آموزشی · نسخه <span class="en">1.0.0</span></span>
+      <span class="row" style="gap:14px">
+        <button class="pill no-print" id="motionBtn" style="cursor:pointer">کاهش حرکت: <b id="motionState">خاموش</b></button>
+        <a class="pill" href="https://github.com/Pillow1243/CarShopping" target="_blank" rel="noopener">مخزن پروژه</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<div class="dock no-print">
+  <button class="iconbtn" id="sfxBtn" aria-pressed="false" title="صدای کلیک" aria-label="روشن/خاموش کردن صدا"><svg><use href="#i-mute"/></svg></button>
+  <button class="iconbtn totop" id="toTop" aria-label="بازگشت به بالا"><svg><use href="#i-up"/></svg></button>
+</div>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="نمایش بزرگ تصویر">
+  <button class="iconbtn lb__x no-print" id="lbX" aria-label="بستن"><svg><use href="#i-x"/></svg></button>
+  <button class="iconbtn lb__nav lb__nav--p no-print" id="lbP" aria-label="قبلی"><svg><use href="#i-right"/></svg></button>
+  <button class="iconbtn lb__nav lb__nav--n no-print" id="lbN" aria-label="بعدی"><svg><use href="#i-left"/></svg></button>
+  <div><img id="lbImg" alt=""><div class="lb__cap" id="lbCap"></div></div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"><svg><use href="#i-check"/></svg><span id="toastMsg"></span></div>
+
+<script src="./js/main.js" defer></script>
+</body>
+</html>
